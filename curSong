@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+import subprocess as sp
+
+text = sp.getoutput("~/dotfiles/spotify-now -i %title")+ ' - '+sp.getoutput("~/dotfiles/spotify-now -i %artist")
+if "org.freedesktop.DBus.Error.ServiceUnknown" not in text: print(text)
+print("Nothing playing")
