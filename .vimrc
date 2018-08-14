@@ -7,7 +7,7 @@ set shiftwidth=2
 set smarttab
 
 imap jj <Esc> 
-colorscheme sexy-railscasts
+colorscheme wombat
 
 "Plugin options
 "Options for ctrlp.vim
@@ -24,9 +24,12 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
 \ }
+let g:lightline.separator = { 'left': '▶', 'right': '◀' }
+let g:lightline.subseparator = { 'left': '|', 'right': '|' }
 "Options for tcomment_vim
 
 "Options for vim-easymotion
+map <Leader> <Plug>(easymotion-prefix)
 
 "Options for vim-multiple-cursors
 let g:multi_cursor_use_default_mapping=0
