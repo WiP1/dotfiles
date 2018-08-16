@@ -7,7 +7,7 @@ set shiftwidth=2
 set smarttab
 
 imap jj <Esc> 
-colorscheme wombat
+"colorscheme wombat
 
 "Plugin options
 "Options for ctrlp.vim
