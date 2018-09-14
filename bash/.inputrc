@@ -1,0 +1,15 @@
+set completion-ignore-case on
+
+set editing-mode vi
+set keymap vi-command
+"l": forward-char 
+"h": backward-char
+"\C-l": clear-screen
+
+set keymap vi-insert
+"\C-k": previous-history
+"\C-j": next-history
+"\C-a": beginning-of-line
+"\C-e": end-of-line
+"jj": vi-movement-mode
+"\C-l": clear-screen
