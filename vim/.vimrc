@@ -20,8 +20,12 @@ colorscheme delek
 map <Leader> <Plug>(easymotion-prefix)
 
 "option for mucomplete
-set completeopt+=menuone
+set completeopt+=menuone,longest,noselect
+set completeopt-=preview
+
 
 "slimv options
-let g:slimv_swank_cmd='! tmux new-window -d -n REPL-SBCL "sbcl --load ~/.vim/pack/vendor/start/slimv/slime/start-swank.lisp"'
+let g:slimv_swank_cmd='! tmux new-window -d -n REPL-SBCL "rlwrap sbcl --load ~/.vim/pack/vendor/start/slimv/slime/start-swank.lisp"'
 let g:paredit_mode=0
+
+nmap <CR> o<Esc>
